@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  width: 90%;
+  margin: auto;
+}
+
+body .image {
+  position: absolute;
+  top: 5%;
+  margin-left: 5%;
+}
+
+.general {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.general__text {
+  background: rgba(248, 191, 191, 0.1);
+  padding: 5%;
+}
+
+.general__text h1 {
+  font-weight: 400;
+  font-size: 60px;
+  width: 50%;
+  letter-spacing: 0.2em;
+}
+
+.general__text h1 span {
+  color: #ce9797;
+}
+
+.general__text input {
+  width: 50%;
+  background: rgba(248, 191, 191, 0.1);
+  border: 2px solid #ce9797;
+  border-radius: 5px;
+  padding: 12px;
+  outline: none;
+}
+
+.general__text p {
+  font-weight: 100;
+  color: #ce9797;
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+.general__text button {
+  padding: 12px;
+  width: 15%;
+  border-radius: 15px;
+  background: #f7576f;
+  position: relative;
+  left: -4%;
+}
+
+@media screen and (max-width: 720px) {
+  body .image {
+    position: static;
+  }
+  .general {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .general__image--picture {
+    width: 100%;
+  }
+  .general input {
+    width: 65%;
+    border-radius: 20px;
+  }
+  .general button {
+    width: 20%;
+    border-radius: 15px;
+    position: relative;
+    left: -7%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -59,6 +59,9 @@ body .image {
 }
 
 @media screen and (max-width: 720px) {
+  body {
+    width: 100%;
+  }
   body .image {
     position: static;
   }
